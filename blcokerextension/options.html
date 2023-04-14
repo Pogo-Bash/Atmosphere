@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blocklist Options</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        input[type="text"] {
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+            li:last-child {
+                border-bottom: none;
+            }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0062cc;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Blocklist Options</h1>
+    <form id="blocklist-form">
+        <input type="text" id="blocklist-input" placeholder="Enter a domain to block">
+        <button type="submit">Add to Blocklist</button>
+    </form>
+    <h2>Blocked Domains</h2>
+    <ul id="blocklist">
+    </ul>
+
+    <script src="options.js"></script>
+</body>
+
+</html>

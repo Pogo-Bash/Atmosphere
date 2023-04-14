@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Blocker Extension",
+  "version": "1.0",
+  "description": "Block URLs based on a user-defined list",
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["scripting"]
+}
